@@ -7,6 +7,13 @@ def index(request):
 
 def topics(request):
     """Show all topics."""
-    topics = Topic.objects.order_by('date_added')
+    topics = Topic.objects.order_by('date_added') # query
     context = {'topics': topics}
     return render(request, 'learning_logs/topics.html', context)
+
+def topic(request, topic_id):
+    """Show a single topic and all its entries."""
+    topic = Topic.objects.get(id=topic_id) # query
+    entries = topic.entry_set.order_by('-date_added') # query
+    context = {'topic': topic, 'entries': entries}
+    return render(request, 'learning_logs/topic.html', context)
