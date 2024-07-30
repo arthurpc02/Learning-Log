@@ -19,8 +19,5 @@
   <li>There are no entries for this topic yet.</li>
   {% endfor %}
 </ul>
-<form action="{% url 'learning_logs:new_entry' topic.id %}" method="GET">
-  <button name="b_add_entry">Add new entry</button>
-</form>
 
 {% endblock content %}
