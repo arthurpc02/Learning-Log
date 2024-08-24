@@ -7,7 +7,7 @@ echo "Installing dependencies:"
 python3 -m pip install -r requirements.txt
 
 echo "Run the server:"
-python3 -m manage.py runserver
+python3 manage.py runserver
 
 # echo "Migrating the database:"
 # python3 manage.py migrate --noinput
