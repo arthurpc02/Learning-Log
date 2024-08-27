@@ -6,15 +6,12 @@
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb",
-        "runtime": "python-3.10.13"
+        "runtime": "python-3.10.13",
+        "postBuild": "sh build_files.sh"
       }
     }
   ],
   "routes": [
-    {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
-    },
     {
       "src": "/(.*)",
       "dest": "learning_log/wsgi.py"
