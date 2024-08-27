@@ -10,7 +10,7 @@ echo "Migrating the database:"
 python3 manage.py migrate
 
 echo "Run the server:"
-python3 manage.py runserver
+python3 manage.py runserver --noreload
 
 
 # echo "Collecting static files:"
