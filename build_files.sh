@@ -9,8 +9,6 @@ python3 -m pip install -r requirements.txt
 echo "Migrating the database:"
 python3 manage.py migrate
 
-echo "Run the server:"
-python3 manage.py runserver --noreload
 
 
 # echo "Collecting static files:"
