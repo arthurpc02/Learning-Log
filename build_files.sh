@@ -3,6 +3,9 @@
 echo "Current python version in Vercel's environment:"
 python3 --version
 
+# requirement for running pip install psycopg2
+sudo apt-get install -y postgresql-client
+
 echo "Installing dependencies:"
 python3 -m pip install -r requirements.txt
 
