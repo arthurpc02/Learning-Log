@@ -1,0 +1,9 @@
+version: "2.4"
+services:
+  database:
+    container_name: "postgres-container"
+    image: "postgres:16.0-alpine3.18"
+    environment:
+      POSTGRES_PASSWORD: "local_password"
+    ports:
+      - "5432:5432"
