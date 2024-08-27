@@ -2,19 +2,25 @@
   "version": 2,
   "builds": [
     {
-      "src": "learning_log",
+      "src": "manage.py",
       "use": "@vercel/python",
       "config": {
-        "maxLambdaSize": "15mb",
-        "runtime": "python-3.10.13",
-        "postBuild": "sh build_files.sh"
+        "maxLambdaSize": "50mb",
+        "runtime": "python3.11"
       }
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "learning_log/wsgi.py"
+      "dest": "/manage.py"
     }
-  ]
+  ],
+  "env": {
+    "DJANGO_SETTINGS_MODULE": "learning-log.settings",
+    "PYTHONPATH": "learning-log"
+  },
+  "build": {
+    "command": "./build_files.sh"
+  }
 }
