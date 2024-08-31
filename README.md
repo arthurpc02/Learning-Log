@@ -7,7 +7,7 @@ Learning Log helps you keep track of your learning, for any topic you're learnin
 For local development:
 
 1. `source ll_env/bin/activate` -> starts python's virtual environment
-2. `docker compose up` -> builds the local DB
+2. `docker compose up -d` -> builds the local DB (use detached mode '-d' to avoid blocking the terminal)
 3. `python manage.py runserver` -> runs the webserver
 
 ## Other useful commands:
