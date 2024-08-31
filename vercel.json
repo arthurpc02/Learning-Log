@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "learning_log",
+      "src": "learning_log/wsgi.py",
       "use": "@vercel/python",
       "config": {
         "maxLambdaSize": "15mb",
