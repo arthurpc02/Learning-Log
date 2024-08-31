@@ -1,6 +1,9 @@
 # Learning-Log
 
-Learning Log helps you keep track of your learning, for any topic you're learning about. Source: Project 3 from the book "Python Crash Course".
+Learning Log helps you keep track of your learning, for any topic you're learning about. Inspiration: "Python Crash Course" book.
+
+Access the app here: [learning-log-gamma.vercel.app](learning-log-gamma.vercel.app
+)
 
 # Development:
 
