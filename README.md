@@ -1,9 +1,10 @@
 # Learning-Log
+![image](https://github.com/user-attachments/assets/f1217ce4-ef2f-4d90-b01c-46ad3aaece22)
 
 Learning Log helps you keep track of your learning, for any topic you're learning about. Inspiration: "Python Crash Course" book.
 
-Access the app here: [learning-log-gamma.vercel.app](learning-log-gamma.vercel.app
-)
+Access the app here: [[learning-log-gamma.vercel.app](https://learning-log-gamma.vercel.app/)]
+
 
 # Development:
 
