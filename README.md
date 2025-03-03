@@ -10,10 +10,12 @@ Access the app here: [[learning-log-gamma.vercel.app](https://learning-log-gamma
 
 For local development:
 
-1. `source ll_env/bin/activate` -> starts python's virtual environment
-2. `docker compose up -d` -> builds the local DB (use detached mode '-d' to avoid blocking the terminal)
-3. perform the migrations: `python manage.py migrate`
-4. `python manage.py runserver` -> runs the webserver
+1. If it is the first time you are running the project, create a virtual environment by running `python -m venv ll_env`
+2. **Always** activate the virtual environment: `source ll_env/bin/activate`
+3. If it is the first time you are running it: `pip install -r requirements`
+4. `docker compose up -d` -> builds the local DB (use detached mode '-d' to avoid blocking the terminal)
+5. perform the migrations: `python manage.py migrate`
+6. `python manage.py runserver` -> runs the webserver
 
 ## Other useful commands:
 
