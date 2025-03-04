@@ -130,3 +130,5 @@ dmypy.json
 .pyre/
 ll_env/bin/dotenv
 .vercel
+
+ll_env/
